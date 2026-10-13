@@ -1,0 +1,8 @@
+/* Reusable interface components live here. Core styles are in main.css. */
+.pill { display: inline-flex; gap: 7px; align-items: center; padding: 6px 10px; border-radius: 40px; border: 1px solid var(--line); background: rgba(255,255,255,.035); color: var(--muted); font-size: .76rem; }
+.pill-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--mint-light); }
+.numbered-list { counter-reset: steps; display: grid; gap: 12px; }
+.numbered-item { counter-increment: steps; display: flex; gap: 14px; padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: rgba(255,255,255,.025); }
+.numbered-item::before { content: counter(steps, decimal-leading-zero); color: var(--mint-light); font-weight: 800; font-variant-numeric: tabular-nums; }
+.metric-line { height: 7px; border-radius: 9px; background: rgba(255,255,255,.07); overflow: hidden; }
+.metric-line span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--teal), var(--mint-light)); }

@@ -1,0 +1,9 @@
+/* Additional responsive overrides can be added here as the project grows. */
+@media (max-width: 480px) {
+  .hero-actions .btn { width: 100%; }
+  .stats-strip .stat-tile { padding: 17px; }
+  .stat-tile strong { font-size: 1.35rem; }
+  .preview { padding: 10px; }
+  .mock-app { padding: 10px; }
+  .section-head { margin-bottom: 26px; }
+}
