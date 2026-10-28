@@ -39,6 +39,39 @@
     "Interface languages": "لغات الواجهة",
     "AI analysis sections": "أقسام التحليل الذكي",
     "Core architecture layers": "طبقات البنية الأساسية",
+    "Project team": "فريق المشروع",
+    "Built by the team, under ": "إعداد الفريق، بإشراف ",
+    "clinical guidance.": "طبي.",
+    "Orthopedic Clinic Management System · Supervisor: D. Mohamed Salah": "نظام إدارة عيادة العظام · المشرف: د. محمد صلاح",
+    "Project supervisor · ": "المشرف على المشروع · ",
+    "Surgeries & payments": "الجراحات والمدفوعات",
+    "Record orthopedic surgeries, schedule dates, link operations to patient records, and track surgery-related payments.": "تسجيل جراحات العظام ومواعيدها وربطها بملفات المرضى ومتابعة مدفوعاتها.",
+    "Clinic stock": "مخزون العيادة",
+    "Maintain stock items, record incoming and outgoing movements, review stock value, and identify items below their reorder threshold.": "إدارة الأصناف وحركات الإضافة والصرف وقيمة المخزون والتنبيه عند انخفاض الكميات.",
+    "Clinic reminders": "تنبيهات العيادة",
+    "Collect reminders for upcoming surgeries and follow-ups, as well as salary due dates, to support day-to-day planning.": "عرض تنبيهات الجراحات والمتابعات القادمة ومواعيد استحقاق الرواتب لدعم التخطيط اليومي.",
+    "Payroll tracking": "متابعة الرواتب",
+    "Track employee salary schedules, payments, and monthly amounts due alongside employee records.": "متابعة جداول رواتب الموظفين والمدفوعات والمستحقات الشهرية ضمن ملفات الموظفين.",
+    "View screenshots": "استعرض الصور",
+    "Download the app": "حمّل التطبيق",
+    "Project credits": "فريق المشروع",
+    "Meet the ": "تعرّف على ",
+    "team.": "الفريق.",
+    "Project Supervisor · المشرف": "مشرف المشروع",
+    "Project Leader · قائد الفريق": "قائد الفريق",
+    "One desktop app for orthopedic patient records, visits, clinic operations, reports and AI-assisted case review.": "تطبيق واحد لملفات مرضى العظام والزيارات وإدارة العيادة والتقارير ومراجعة الحالات بمساعدة الذكاء الاصطناعي.",
+    "Team": "الفريق",
+    "Team members": "أعضاء الفريق",
+    "Project team.": "فريق المشروع.",
+    "Meet the team": "تعرف على الفريق",
+    "Built by the ": "نفذ المشروع ",
+    "Download project": "تحميل المشروع",
+    "Download the app": "تحميل المشروع",
+    "Project": "المشروع",
+    "Project Supervisor": "مشرف المشروع",
+    "Project Leader": "قائد الفريق",
+    "Project credits": "أعضاء المشروع",
+    "The supervisor and people who built the Orthopedic Clinic Management System.": "مشرف المشروع وأعضاء الفريق الذين طوروا نظام إدارة عيادة العظام.",
     "The project": "المشروع",
     "Clinic operations,": "إدارة العيادة،",
     "organized.": "بشكل منظّم.",
@@ -543,7 +576,8 @@
       if (
         !parent ||
         ["SCRIPT", "STYLE"].includes(parent.tagName) ||
-        parent.closest(".language-toggle")
+        parent.closest(".language-toggle") ||
+        parent.closest(".no-translate")
       )
         continue;
       if (textNode.__enText === undefined)
@@ -563,6 +597,8 @@
           "Skip to content": "تخطّي إلى المحتوى",
           "Toggle navigation": "فتح أو إغلاق القائمة",
           "Technical guide": "الدليل التقني",
+          "Download the app": "تحميل التطبيق",
+          "Download project": "تحميل المشروع",
         };
         el.setAttribute(
           "aria-label",
@@ -583,6 +619,7 @@
         "قاعدة البيانات والأمان | أورثوكير",
       "Technical Guide | OrthoCare Showcase": "الدليل التقني | أورثوكير",
       "Project Gallery | OrthoCare Showcase": "معرض المشروع | أورثوكير",
+      "Project Team | OrthoCare Showcase": "فريق المشروع | أورثوكير",
     };
     document.title =
       lang === "ar"
